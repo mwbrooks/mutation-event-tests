@@ -12,11 +12,12 @@ asyncTest('should dispatch DOMNodeInserted event', 1, function() {
     $.el.fixture.appendChild(el);
 });
 
-test('should have e.target as the inserted element', 1, function() {
+test('should have e.target as the inserted element', 2, function() {
     $.el.fixture.addEventListener('DOMNodeInserted', $.fn.eventListenerCallback, false);
     
     $.fn.callback = function(e) {
-        equal(e.target, el, 'Target element is the inserted element.');
+        equal(e.target, el, 'Target element is the same.');
+        equal(e.target.tagName, 'DIV', 'Target element uses uppercase tag name.');
         start();
     };
     
