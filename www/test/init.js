@@ -29,7 +29,7 @@ window.$ = {
             $.el.fixture.innerHTML = '';
         },
         eventListenerCallback: function(e) {
-            e.relatedNode.removeEventListener(e.type, $.fn.unregisteringCallback);
+            e.relatedNode.removeEventListener(e.type, $.fn.eventListenerCallback);
             if (typeof $.fn.callback === 'function') $.fn.callback(e);
         }
     }
