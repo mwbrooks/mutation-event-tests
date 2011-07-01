@@ -13,5 +13,4 @@ test('should dispatch DOMAttrModified event', 1, function() {
     var el = document.createElement('div');
     $.el.fixture.appendChild(el);
     el.setAttribute('id', 'attr-modified-node');
-    el.setAttribute('id', 'attr-modified-node-2');
 });

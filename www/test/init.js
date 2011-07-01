@@ -38,7 +38,7 @@ window.$ = {
             // e.relatedNode (e.target is the inserted node).
             var target = e.relatedNode || e.target;
 
-            target.removeEventListener(e.type, $.fn.eventListenerCallback);
+            target.removeEventListener(e.type, $.fn.eventListenerCallback, false);
             if (typeof $.fn.callback === 'function') $.fn.callback(e);
         }
     }
