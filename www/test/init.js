@@ -29,7 +29,13 @@ window.$ = {
             $.el.fixture.innerHTML = '';
         },
         eventListenerCallback: function(e) {
-            e.relatedNode.removeEventListener(e.type, $.fn.eventListenerCallback);
+            // Depending on the event type, the relatedNode or the target may
+            // be broadcasting the event. For example, DOMSubtreeModified
+            // uses e.target (e.relatedNode is null), DOMNodeInserted uses
+            // e.relatedNode (e.target is the inserted node).
+            var target = e.relatedNode || e.target;
+
+            target.removeEventListener(e.type, $.fn.eventListenerCallback);
             if (typeof $.fn.callback === 'function') $.fn.callback(e);
         }
     }
