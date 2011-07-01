@@ -1,6 +1,8 @@
 module('DOMSubtreeModified', $.config.module);
 
-asyncTest('should dispatch DOMSubtreeModified event', 1, function() {
+test('should dispatch DOMSubtreeModified event', 1, function() {
+    stop($.config.timeout);
+
     $.el.fixture.addEventListener('DOMSubtreeModified', $.fn.eventListenerCallback, false);
     
     $.fn.callback = function(e) {

@@ -2,8 +2,10 @@
 //
 QUnit.config.autostart = false;
 
-localStorage.clear();
-sessionStorage.clear();
+try {
+    localStorage.clear();
+    sessionStorage.clear();
+} catch(e) {}
 
 // Test Helper Object
 //

@@ -1,6 +1,8 @@
 module('DOMNodeInserted', $.config.module);
 
-asyncTest('should dispatch DOMNodeInserted event', 1, function() {
+test('should dispatch DOMNodeInserted event', 1, function() {
+    stop($.config.timeout);
+
     $.el.fixture.addEventListener('DOMNodeInserted', $.fn.eventListenerCallback, false);
     
     $.fn.callback = function(e) {
@@ -12,7 +14,9 @@ asyncTest('should dispatch DOMNodeInserted event', 1, function() {
     $.el.fixture.appendChild(el);
 });
 
-asyncTest('should have e.target as the inserted element', 2, function() {
+test('should have e.target as the inserted element', 2, function() {
+    stop($.config.timeout);
+
     $.el.fixture.addEventListener('DOMNodeInserted', $.fn.eventListenerCallback, false);
     
     $.fn.callback = function(e) {

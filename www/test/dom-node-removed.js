@@ -1,6 +1,8 @@
 module('DOMNodeRemoved', $.config.module);
 
-asyncTest('should dispatch DOMNodeRemoved event', 1, function() {
+test('should dispatch DOMNodeRemoved event', 1, function() {
+    stop($.config.timeout);
+
     $.el.fixture.addEventListener('DOMNodeRemoved', $.fn.eventListenerCallback, false);
     
     $.fn.callback = function(e) {
@@ -13,7 +15,9 @@ asyncTest('should dispatch DOMNodeRemoved event', 1, function() {
     $.el.fixture.removeChild(el);
 });
 
-asyncTest('should have e.target as the removed element', 1, function() {
+test('should have e.target as the removed element', 1, function() {
+    stop($.config.timeout);
+
     $.el.fixture.addEventListener('DOMNodeRemoved', $.fn.eventListenerCallback, false);
     
     $.fn.callback = function(e) {
