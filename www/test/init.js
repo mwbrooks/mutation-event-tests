@@ -19,7 +19,8 @@ window.$ = {
             teardown: function() {
                 $.fn.clean();
             }
-        }
+        },
+        timeout: 300
     },
     el: {
         fixture: null,
