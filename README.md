@@ -9,6 +9,7 @@ Browser Results
                        | DOMSubtreeModified | DOMNodeInserted | DOMNodeRemoved | DOMNodeInsertedIntoDocument | DOMNodeRemovedFromDocument | DOMAttrModified | DOMCharacterDataModified
     -------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------
     Android    2.2     |         ✔                   ✔               ✔                        ✖                            ✖                       ✖                   ½
+    BlackBerry 5.0.0   |         ✖                   ✔               ✔                        ✖                            ✖                       ✔                   ½
     BlackBerry 6.0.227 |         ✔                   ✔               ✔                        ✖                            ✖                       ✖                   ½
     Chrome     12.0    |         ✔                   ✔               ✔                        ✖                            ✖                       ✖                   ½
     FireFox    3.6     |         ✔                   ✔               ✔                        ✖                            ✖                       ✔                   ½
