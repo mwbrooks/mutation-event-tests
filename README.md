@@ -6,14 +6,14 @@ Mutation Events are defined in the [W3C DOM-Level 2 Event Model](http://www.w3.o
 Browser Results
 ---------------
 
-                   | DOMSubtreeModified | DOMNodeInserted | DOMNodeRemoved | DOMNodeInsertedIntoDocument | DOMNodeRemovedFromDocument | DOMAttrModified | DOMCharacterDataModified
-    Android 2.2    |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |           ½             
-    BlackBerry 6.0 |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |           ½             
-    Chrome 12.0    |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |           ½             
-    FireFox 3.6    |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✔       |           ½             
-    iOS 4.3        |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |           ½             
-    Opera 11.505   |         ✖          |        ✔        |       ✔        |               ✖             |              ✖             |         ✔       |           ½             
-    Safari 5.0.5   |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |           ½             
+                       | DOMSubtreeModified | DOMNodeInserted | DOMNodeRemoved | DOMNodeInsertedIntoDocument | DOMNodeRemovedFromDocument | DOMAttrModified | DOMCharacterDataModified
+    Android 2.2        |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |           ½             
+    BlackBerry 6.0.227 |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |           ½             
+    Chrome 12.0        |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |           ½             
+    FireFox 3.6        |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✔       |           ½             
+    iOS 4.3            |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |           ½             
+    Opera 11.505       |         ✖          |        ✔        |       ✔        |               ✖             |              ✖             |         ✔       |           ½             
+    Safari 5.0.5       |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |           ½             
 
 Run Tests Online
 ----------------
