@@ -1,7 +1,7 @@
 module('DOMAttrModified', $.config.module);
 
 test('should dispatch DOMAttrModified event', 1, function() {
-    stop($.config.timeout);
+    QUnit.stop($.config.timeout);
 
     $.el.fixture.addEventListener('DOMAttrModified', $.fn.eventListenerCallback, false);
 

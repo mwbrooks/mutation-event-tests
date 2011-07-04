@@ -1,7 +1,7 @@
 module('DOMNodeRemoved', $.config.module);
 
 test('should dispatch DOMNodeRemoved event', 1, function() {
-    stop($.config.timeout);
+    QUnit.stop($.config.timeout);
 
     $.el.fixture.addEventListener('DOMNodeRemoved', $.fn.eventListenerCallback, false);
     
@@ -16,7 +16,7 @@ test('should dispatch DOMNodeRemoved event', 1, function() {
 });
 
 test('should have e.target as the removed element', 1, function() {
-    stop($.config.timeout);
+    QUnit.stop($.config.timeout);
 
     $.el.fixture.addEventListener('DOMNodeRemoved', $.fn.eventListenerCallback, false);
     

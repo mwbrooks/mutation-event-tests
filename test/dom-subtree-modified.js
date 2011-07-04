@@ -1,7 +1,7 @@
 module('DOMSubtreeModified', $.config.module);
 
 test('should dispatch DOMSubtreeModified event', 1, function() {
-    stop($.config.timeout);
+    QUnit.stop($.config.timeout);
 
     $.el.fixture.addEventListener('DOMSubtreeModified', $.fn.eventListenerCallback, false);
     

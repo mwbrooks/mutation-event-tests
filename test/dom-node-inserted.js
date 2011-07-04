@@ -1,7 +1,7 @@
 module('DOMNodeInserted', $.config.module);
 
 test('should dispatch DOMNodeInserted event', 1, function() {
-    stop($.config.timeout);
+    QUnit.stop($.config.timeout);
 
     $.el.fixture.addEventListener('DOMNodeInserted', $.fn.eventListenerCallback, false);
     
@@ -15,7 +15,7 @@ test('should dispatch DOMNodeInserted event', 1, function() {
 });
 
 test('should have e.target as the inserted element', 2, function() {
-    stop($.config.timeout);
+    QUnit.stop($.config.timeout);
 
     $.el.fixture.addEventListener('DOMNodeInserted', $.fn.eventListenerCallback, false);
     

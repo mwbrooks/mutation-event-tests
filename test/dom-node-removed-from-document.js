@@ -1,7 +1,7 @@
 module('DOMNodeRemovedFromDocument', $.config.module);
 
 test('should dispatch DOMNodeRemovedFromDocument event', 1, function() {
-    stop($.config.timeout);
+    QUnit.stop($.config.timeout);
 
     // W3C spec does not state the type of nodes that can listen to this event
     $.el.fixture.addEventListener('DOMNodeRemovedFromDocument', $.fn.eventListenerCallback, false);

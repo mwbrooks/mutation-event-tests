@@ -1,7 +1,7 @@
 module('DOMNodeInsertedIntoDocument', $.config.module);
 
 test('should dispatch DOMNodeInsertedIntoDocument event', 1, function() {
-    stop($.config.timeout);
+    QUnit.stop($.config.timeout);
 
     // The W3C spec does not state what type of elements can listen to this event.
     $.el.fixture.addEventListener('DOMNodeInsertedIntoDocument', $.fn.eventListenerCallback, false);

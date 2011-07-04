@@ -1,7 +1,7 @@
 module('DOMCharacterDataModified', $.config.module);
 
 test('should dispatch DOMCharacterDataModified event', 2, function() {
-    stop($.config.timeout);
+    QUnit.stop($.config.timeout);
 
     $.el.fixture.addEventListener('DOMCharacterDataModified', $.fn.eventListenerCallback, false);
 
