@@ -30,6 +30,7 @@ Browser Support
 ---------------
 
                  | DOMSubtreeModified | DOMNodeInserted | DOMNodeRemoved | DOMNodeInsertedIntoDocument | DOMNodeRemovedFromDocument | DOMAttrModified | DOMCharacterDataModified
+    Android 2.2  |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |         partial         
     Chrome 12.0  |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |         partial         
     FireFox 3.6  |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✔       |         partial         
     iOS 4.3      |         ✔          |        ✔        |       ✔        |               ✖             |              ✖             |         ✖       |         partial         
