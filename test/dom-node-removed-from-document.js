@@ -8,7 +8,7 @@ test('should dispatch DOMNodeRemovedFromDocument event', 1, function() {
 
     $.fn.callback = function(e) {
         ok(true, 'DOMNodeRemovedFromDocument was fired');
-        start();
+        QUnit.start();
     };
 
     var el = document.createElement('div');

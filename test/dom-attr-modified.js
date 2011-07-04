@@ -7,7 +7,7 @@ test('should dispatch DOMAttrModified event', 1, function() {
 
     $.fn.callback = function(e) {
         ok(true, 'DOMAttrModified was fired');
-        start();
+        QUnit.start();
     };
 
     var el = document.createElement('div');

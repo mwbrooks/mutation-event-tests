@@ -51,7 +51,7 @@ window.addEventListener('load', function() {
     $.el.fixture = document.getElementById('qunit-fixture');
 
     // Run QUnit
-    start();
+    QUnit.start();
 
 }, false);
 

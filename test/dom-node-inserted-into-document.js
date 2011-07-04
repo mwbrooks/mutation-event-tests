@@ -8,7 +8,7 @@ test('should dispatch DOMNodeInsertedIntoDocument event', 1, function() {
 
     $.fn.callback = function(e) {
         ok(true, 'DOMNodeInsertedIntoDocument was fired');
-        start();
+        QUnit.start();
     };
 
     var el = document.createElement('div');

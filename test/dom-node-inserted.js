@@ -7,7 +7,7 @@ test('should dispatch DOMNodeInserted event', 1, function() {
     
     $.fn.callback = function(e) {
         ok(true, 'DOMNodeInserted was fired');
-        start();
+        QUnit.start();
     };
     
     var el = document.createElement('div');
@@ -22,7 +22,7 @@ test('should have e.target as the inserted element', 2, function() {
     $.fn.callback = function(e) {
         equal(e.target, el, 'Target element is the same.');
         equal(e.target.tagName, 'DIV', 'Target element uses uppercase tag name.');
-        start();
+        QUnit.start();
     };
     
     var el = document.createElement('div');

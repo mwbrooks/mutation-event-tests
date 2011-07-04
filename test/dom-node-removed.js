@@ -7,7 +7,7 @@ test('should dispatch DOMNodeRemoved event', 1, function() {
     
     $.fn.callback = function(e) {
         ok(true, 'DOMNodeRemoved was fired');
-        start();
+        QUnit.start();
     };
     
     var el = document.createElement('div');
@@ -22,7 +22,7 @@ test('should have e.target as the removed element', 1, function() {
     
     $.fn.callback = function(e) {
         equal(e.target, el, 'Target element is the same.');
-        start();
+        QUnit.start();
     };
     
     var el = document.createElement('div');

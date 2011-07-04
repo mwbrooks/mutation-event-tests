@@ -13,7 +13,7 @@ test('should dispatch DOMCharacterDataModified event', 2, function() {
         equal(e.prevValue,   'Some data',          'e.prevValue should be correct');
         equal(e.newValue,    'Some dataMore data', 'e.newValue should be correct');
 
-        start();
+        QUnit.start();
     };
 
     var el = document.createElement('p');

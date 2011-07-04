@@ -7,7 +7,7 @@ test('should dispatch DOMSubtreeModified event', 1, function() {
     
     $.fn.callback = function(e) {
         ok(true, 'DOMSubtreeModified was fired');
-        start();
+        QUnit.start();
     };
     
     var el = document.createElement('div');
