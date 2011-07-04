@@ -1,11 +1,7 @@
 Mutation Event Test Suite
 =========================
 
-Mutation Events are defined in the [W3C DOM-Level 2 Event Model](http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-mutationevents) and provide notification of any change to the HTML document structure.
-
-Unfortunately, most browser vendors do not support all types of `MutationEvent`.
-
-This is a small qUnit test suite that can check what events a browser supports.
+Mutation Events are defined in the [W3C DOM-Level 2 Event Model](http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-mutationevents). They provide notification of any change to the HTML document structure.
 
 Run Tests Online
 ----------------
@@ -17,7 +13,7 @@ Run Tests Yourself
 
 Clone the repository:
 
-    git clone git@github.com:mwbrooks/mutation-event-tests.git
+    git clone git://github.com/mwbrooks/mutation-event-tests.git
 
 Update the submodules:
 
